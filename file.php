@@ -31,6 +31,7 @@ if (isset($_POST['submit'])) {
 
 <form action="" method="post" enctype="multipart/form-data">
     Select image to upload to server:
+		Multi Type form data
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload Image" name="submit">
 </form>
