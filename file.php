@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 		mkdir($path, 0777);
 	}
 	$newPath = $path.$newFileName;
-	
+
 	if ($fileError === 0) {
 		if(move_uploaded_file($fileTempName, $newPath)){
 			echo 'Uploaded Successfully';
@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
 <body>
 
 <form action="" method="post" enctype="multipart/form-data">
-    Select image to upload:
+    Select image to upload to server:
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload Image" name="submit">
 </form>
