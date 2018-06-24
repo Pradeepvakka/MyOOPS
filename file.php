@@ -1,6 +1,7 @@
 
 <?php
 if (isset($_POST['submit'])) {
+	//FOlder name
 	$files = $_FILES['fileToUpload'];
 	$fileName = $files['name'];
 	$fileTempName = $files['tmp_name'];
